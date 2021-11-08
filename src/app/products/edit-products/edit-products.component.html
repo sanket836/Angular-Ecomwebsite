@@ -1,0 +1,50 @@
+<mat-card>
+  <mat-card-title>Update Product</mat-card-title>
+  <mat-card-content class="edit">
+    <div *ngIf="dataloaded">
+    <form [formGroup]="editproductform" (submit)="updateproduct()">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Product Name" formControlName="name">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Description</mat-label>
+          <input matInput placeholder="Product Description" formControlName="description">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Category Name</mat-label>
+          <mat-select [(ngModel)]="selectedValue" placeholder="Select Category" formControlName="categoryname">
+            <mat-option *ngFor="let cat of categories" [value]="cat.name">
+                {{cat.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Price</mat-label>
+          <input matInput placeholder="Product Price" formControlName="price">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <button mat-raised-button class="demo-button">Update</button>
+      </p>
+
+    </form>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+

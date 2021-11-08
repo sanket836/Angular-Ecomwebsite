@@ -1,0 +1,32 @@
+<mat-card>
+  <mat-card-title>Update Product</mat-card-title>
+  <mat-card-content class="edit">
+    <div *ngIf="dataloaded">
+    <form [formGroup]="editcategoryform" (submit)="updatecategory()">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Category Name" formControlName="name">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Description</mat-label>
+          <input matInput placeholder="Category Description" formControlName="description">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <button mat-raised-button class="demo-button">Update</button>
+      </p>
+
+
+    </form>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+

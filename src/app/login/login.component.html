@@ -1,0 +1,19 @@
+<div class="main-div">
+      <mat-card class="example-form">
+        <mat-toolbar color="primary">Login Page</mat-toolbar>
+        <form class="login-form" [formGroup]="signupForm">
+          <mat-form-field>
+            <input matInput placeholder="username" formControlName="email">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput type="password" placeholder="password" formControlName="password">
+          </mat-form-field>
+          <br>
+          <button (click)="login(signupForm.value)" [disabled]="!signupForm.valid"
+               color="primary" class="example-button-row" mat-raised-button type="submit"
+                  >Login</button>
+        </form>
+
+      </mat-card>
+</div>

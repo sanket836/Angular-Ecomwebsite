@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "john",
+      "email": "john@gmail.com",
+      "password": "123",
+      "type": "admin"
+    },
+    {
+      "id": 2,
+      "name": "chris",
+      "email": "chris@gmail.com",
+      "password": "123",
+      "type": "admin"
+    },
+    {
+      "id": 3,
+      "name": "evan",
+      "email": "evan@gmail.com",
+      "password": "123",
+      "type": "admin"
+    }
+  ],
+  "Category": [
+    {
+      "name": "Kitchen appliances",
+      "description": "Welcome to kitchen appliances",
+      "id": 1
+    },
+    {
+      "name": "Furniture store",
+      "description": "Welcome to furniture store",
+      "id": 2
+    },
+    {
+      "name": "Clothing Store",
+      "description": "Welcome to clothing stores",
+      "id": 3
+    },
+    {
+      "name": "Hardware",
+      "description": "Welcome to pipe",
+      "id": 4
+    },
+    {
+      "name": "Machinery",
+      "description": "This is machinery store",
+      "id": 6
+    },
+    {
+      "name": "Electronics",
+      "description": "This is electronics store",
+      "id": 7
+    },
+    {
+      "name": "Grocery Store",
+      "description": "This is grocery store",
+      "id": 8
+    }
+  ],
+  "Products": [
+    {
+      "name": "Kitchen appliances",
+      "description": "Water Prifiers",
+      "price": "1000",
+      "categoryid": 1,
+      "id": 1
+    },
+    {
+      "name": "Furniture store",
+      "description": "Sofa Set",
+      "price": "10000",
+      "categoryid": 2,
+      "id": 2
+    },
+    {
+      "name": "Electronics store",
+      "description": "Fridge",
+      "price": "15000",
+      "categoryid": 7,
+      "id": 3
+    },
+    {
+      "name": "Clothing store",
+      "description": "clothes",
+      "price": "3000",
+      "categoryid": 3,
+      "id": 4
+    },
+    {
+      "name": "TV",
+      "description": "Television",
+      "price": "22000",
+      "categoryid": 7,
+      "id": 6
+    },
+    {
+      "name": "utensils",
+      "description": "utensils details",
+      "categoryid": "1",
+      "price": "1000",
+      "id": 8
+    },
+    {
+      "name": "Machinery",
+      "description": "Welcome to machinery",
+      "price": "100",
+      "categoryid": 6,
+      "id": 10
+    },
+    {
+      "name": "Kitchen appliances",
+      "description": "Water Prifiers",
+      "price": "80000",
+      "categoryid": 1,
+      "id": 12
+    },
+    {
+      "name": "Laptop",
+      "description": "Dell laptop",
+      "price": "60000",
+      "categoryid": 7,
+      "id": 13
+    }
+  ]
+}
